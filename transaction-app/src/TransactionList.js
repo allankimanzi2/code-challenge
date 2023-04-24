@@ -7,7 +7,7 @@ function TransactionsList() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/transactions')
+    fetch('http://localhost:8001/transactions')
       .then(response => response.json())
       .then(data => setTransactions(data));
   }, []);
